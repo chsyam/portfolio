@@ -1,6 +1,7 @@
 import { FaHackerrank } from "react-icons/fa";
 import { SiLeetcode, SiCodechef } from "react-icons/si";
 import gfg from "../images/gfg.svg";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   return (
@@ -21,7 +22,12 @@ const Explore = () => {
           <div className="mx-[20px] text-center">
             <ul>
               <li className="text-[50px] mx-auto w-fit text-[#5E3212]">
-                <FaHackerrank />
+                <Link
+                  target="_blank"
+                  to="https://www.hackerrank.com/Syam_190543"
+                >
+                  <FaHackerrank />
+                </Link>
               </li>
               <li className="my-[10px]  text-white font-poppins">HackerRank</li>
             </ul>
@@ -29,7 +35,9 @@ const Explore = () => {
           <div className="mx-[20px]">
             <ul>
               <li className="text-[50px] text-[#5E3212] mx-auto w-fit">
-                <SiLeetcode />
+                <Link target="_blank" to="https://leetcode.com/proSyam/">
+                  <SiLeetcode />
+                </Link>
               </li>
               <li className="my-[10px] text-white font-poppins">LeetCode</li>
             </ul>
@@ -37,15 +45,26 @@ const Explore = () => {
           <div className="mx-[20px]">
             <ul>
               <li className="text-[50px] mx-auto w-fit text-[#5E3212]">
-                <SiCodechef />
+                <Link
+                  target="_blank"
+                  to="https://www.codechef.com/users/syam_6845"
+                >
+                  <SiCodechef />
+                </Link>
               </li>
+
               <li className="my-[10px] text-white font-poppins">CodeChef</li>
             </ul>
           </div>
           <div className="mx-[20px]">
             <ul>
               <li className="mx-auto w-fit text-[#5E3212]">
-                <img width="62px" src={gfg} alt="grreks" />
+                <Link
+                  target="_blank"
+                  to="https://auth.geeksforgeeks.org/user/syamch"
+                >
+                  <img width="62px" src={gfg} alt="grreks" />
+                </Link>
               </li>
               <li className="my-[10px] text-white font-poppins">GFG</li>
             </ul>

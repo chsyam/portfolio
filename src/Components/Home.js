@@ -23,7 +23,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="my-[4%] h-[600px] flex justify-center font-poppins">
+    <div className="mt-[50px] mb-[4%] h-[600px] flex justify-center font-poppins">
       <div className="details my-auto mr-[3%]">
         <div className="name font-bold text-[40px] text-[#5E3212]">
           Syam Kumar Chintakayala

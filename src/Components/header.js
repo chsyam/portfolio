@@ -1,13 +1,21 @@
+import { useRef } from "react";
 import { BsSun, BsTelephone } from "react-icons/bs";
 
-const Header = () => {
+function Header() {
+  const ref = useRef(null);
+  const clickHandler = () => {
+    ref.current?.scrollIntoView({ behaviour: "smooth" });
+  };
   return (
     <div>
       <div className="flex justify-center">
         <div className="w-[80%] mt-[20px] flex justify-center">
-          <div className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]">
+          <button
+            onClick={clickHandler}
+            className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]"
+          >
             Home
-          </div>
+          </button>
           <div className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]">
             Services
           </div>
@@ -32,6 +40,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;

@@ -5,7 +5,7 @@ import { BsCheckCircle } from "react-icons/bs";
 const Qualification = () => {
   const edu_qual = [
     {
-      title: "Computer Science Engineering, B.Tech",
+      title: "Computer Science, B.Tech",
       organization:
         "Gayatri Vidya Parishad College of Engineering, Visakhapatnam",
       time: "2019-2023",
@@ -25,43 +25,70 @@ const Qualification = () => {
     },
   ];
 
-  const th_td = {
-    border: "1px solid black",
-    textAlign: "center",
-  };
   return (
     <div>
-      <div className="text-4xl text-[#5E3212] font-poppins my-[70px] text-center">
-        Educational Qualification
+      <div className="text-4xl text-[#5E3212] font-poppins mt-[100px] mb-[15px] text-center">
+        Education
       </div>
-      <div className="flex justify-around font-poppins">
-        {edu_qual.map((qual) => (
-          <table className="w-[350px] h-[250px]">
-            <tr>
-              <th style={th_td} colSpan="2">
-                {qual.title}
-              </th>
-            </tr>
-            <tr>
-              <td style={th_td} className="p-2">
-                <CiLocationOn />
-              </td>
-              <td style={th_td}>{qual.organization}</td>
-            </tr>
-            <tr>
-              <td style={th_td} className="p-2">
-                <FaRegCalendarAlt />
-              </td>
-              <td style={th_td}>{qual.time}</td>
-            </tr>
-            <tr>
-              <td style={th_td} className="p-2">
-                <BsCheckCircle />
-              </td>
-              <td style={th_td}>{qual.grade}</td>
-            </tr>
-          </table>
-        ))}
+      <div className="m-auto">
+        <ul className="flex flex-wrap justify-center">
+          {edu_qual.map((exp) => (
+            <li className="p-[20px]">
+              <div className="description mt-[25px] w-[300px] text-[16px] ">
+                <table className="mx-auto">
+                  <tbody>
+                    <tr className="h-[50px]">
+                      <td
+                        className="border-none text-xl text-center"
+                        colSpan="2"
+                      >
+                        <b>{exp.title}</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colSpan="2"
+                        className="border border-0 border-b border-gray-300"
+                      ></td>
+                    </tr>
+                    <tr className="h-[50px]">
+                      <td className="pr-2">{<CiLocationOn />}</td>
+                      <td className="">{exp.organization}</td>
+                    </tr>
+                    <tr>
+                      <td
+                        colSpan="2"
+                        className="border border-0 border-b border-gray-300"
+                      ></td>
+                    </tr>
+                    <tr className="h-[50px]">
+                      <td className="pr-2">{<FaRegCalendarAlt />}</td>
+                      <td className="border-none">{exp.time}</td>
+                    </tr>
+                    <tr>
+                      <td
+                        colSpan="2"
+                        className="border border-0 border-b border-gray-300"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <td className="pr-2">{<BsCheckCircle />}</td>
+                      <td className="border-none text-justify h-[50px]">
+                        {exp.grade}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colSpan="2"
+                        className="border border-0 border-b border-gray-300"
+                      ></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
