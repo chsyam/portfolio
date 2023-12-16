@@ -1,125 +1,150 @@
 import { MdLocationOn, MdOutgoingMail, MdSend } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
-import { AiFillGithub, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
-import { CiLinkedin } from "react-icons/ci";
+import { Link } from "react-router-dom";
+
 import "./Footer.css";
+import { BsGithub, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
-  return (
-    <div>
-      <div className="text-4xl text-[#5E3212] font-poppins mt-[50px] mb-[30px] text-center">
-        Contact
-      </div>
-      <div className="bg-[#f3e8df] py-[20px]">
-        <table className="mx-auto mt-[20px]">
-          <tbody>
-            <tr>
-              <td className="bg-[#f3e8df] h-[70px] border-none"></td>{" "}
-              <td className="p-0 border-none" rowSpan="3">
-                <table className="block text-[#5E3212]">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <form className="mx-[20px]">
-                          <input
-                            className="rounded-md"
-                            type="text"
-                            placeholder="Your Name"
-                          />
-                          <br />
-                          <input
-                            className="rounded-md"
-                            type="text"
-                            placeholder="Your E-mail"
-                          />
-                          <br />
-                          <textarea
-                            className="rounded-md"
-                            type="text"
-                            rows="7"
-                            placeholder="Your Message"
-                          />
-                          <br />
-                          <button
-                            className="bg-[#5E3212] text-white rounded-md flex justify-center"
-                            type="submit"
-                          >
-                            <div className="ml-[10px] my-[5px] font-bold text-2xl">
-                              Send
-                            </div>
-                            <div className="mr-[5px] ml-[3px] my-[5px] font-bold text-2xl p-1">
-                              <MdSend />
-                            </div>
-                          </button>
-                          <br />
-                        </form>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td className="p-0 border-none">
-                <table className="child bg-[#5E321233]">
-                  <tbody>
-                    <tr>
-                      <th colspan="2" className="text-2xl">
-                        Contact Me
-                      </th>
-                    </tr>
-                    <tr>
-                      <td className="pl-2 text-2xl w-[50px]">
-                        <MdLocationOn />
-                      </td>
-                      <td className="w-[250px]">
-                        Eluru, Andhra Pradesh, India
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="pl-2 text-2xl w-[50px]">
-                        <MdOutgoingMail />
-                      </td>
-                      <td className="w-[250px] underline underline-offset-2">
-                        syamkumar6845@gmail.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="pl-2 text-2xl w-[50px]">
-                        <FiPhoneCall />
-                      </td>
-                      <td className="w-[250px]">+918008331438</td>
-                    </tr>
-                    <tr>
-                      <td colSpan="2">
-                        <ul className="pl-2 flex justify-left text-2xl">
-                          <li className="px-1">
-                            <AiFillGithub />
-                          </li>
-                          <li className="px-1">
-                            <CiLinkedin />
-                          </li>
-                          <li className="px-1">
-                            <AiOutlineTwitter />
-                          </li>
-                          <li className="px-1">
-                            <AiFillYoutube />
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td className="bg-[#f3e8df] h-[70px] border-none"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
+
+	const social_medial_links = [
+		{
+			link: "https://www.linkedin.com/in/chsyamkumar/",
+			logo: <BsLinkedin />,
+		},
+		{
+			link: "https://github.com/chsyam",
+			logo: <BsGithub />,
+		},
+		{
+			link: "https://twitter.com/Syam_KumarCH",
+			logo: <BsTwitter />,
+		},
+		{
+			link: "https://www.youtube.com/channel/UCsnGsqVWEl_37bGwA_MmAng",
+			logo: <BsYoutube />,
+		},
+	];
+
+	return (
+		<div>
+			<div className="text-4xl text-[#5E3212] font-poppins mt-[30px] mb-[30px] text-center">
+				contact
+			</div>
+			<div className="py-[20px] shadow-md">
+				<table className="mx-auto mt-[20px]">
+					<tbody>
+						<tr>
+							<td className="h-[70px] border-none"></td>
+							<td className="p-0 border-none" width="350" rowSpan="3">
+								<table className="block bg-[#5E321280]">
+									<tbody>
+										<tr>
+											<td>
+												<form className="mx-[20px]">
+													<div className="">
+														<input
+															className="rounded-md"
+															type="text"
+															placeholder="your name"
+															required
+														/>
+													</div>
+													<div>
+														<input
+															className="rounded-md"
+															type="email"
+															placeholder="your email"
+															required
+														/>
+													</div>
+													<div>
+														<textarea
+															className="rounded-md"
+															type="text"
+															rows="6"
+															placeholder="your message"
+															required
+														/>
+													</div>
+													<div>
+														<button
+															className="bg-[#5E3212] text-white rounded-2xl flex justify-center"
+															type="submit"
+														>
+															<div className="ml-[10px] my-[5px] text-xl">
+																send
+															</div>
+															<div className="m-[5px] text-xl py-[6px]">
+																<MdSend />
+															</div>
+														</button>
+													</div>
+												</form>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td className="p-0 border-none">
+								<table className="child bg-[#5E321233]">
+									<tbody>
+										<tr>
+											<td colspan="2" className="text-2xl text-center">
+												Contact Info
+											</td>
+										</tr>
+										<tr>
+											<td className="pl-2 text-2xl w-[50px]">
+												<MdLocationOn />
+											</td>
+											<td className="w-[250px]">
+												Eluru, Andhra Pradesh, India
+											</td>
+										</tr>
+										<tr>
+											<td className="pl-2 text-2xl w-[50px]">
+												<MdOutgoingMail />
+											</td>
+											<td className="w-[250px] underline underline-offset-2">
+												syamkumar6845@gmail.com
+											</td>
+										</tr>
+										<tr>
+											<td className="pl-2 text-2xl w-[50px]">
+												<FiPhoneCall />
+											</td>
+											<td className="w-[250px]">+91-8008331438</td>
+										</tr>
+										<tr>
+											<td colSpan="2">
+												<ul className="pl-2 flex justify-left text-2xl">
+													{
+														social_medial_links.map((website) => (
+															<li className="px-1 mr-2 text-xl cursor-pointer">
+																<Link target="_blank" to={website.link}>
+																	{website.logo}
+																</Link>
+															</li>
+														))
+													}
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td className="h-[70px] border-none"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div >
+	);
 };
 
 export default Footer;

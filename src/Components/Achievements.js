@@ -1,5 +1,5 @@
 import { AiOutlineEye, AiOutlineChrome } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
 const Achievements = () => {
   const earned = [
     {
@@ -21,14 +21,14 @@ const Achievements = () => {
   ];
   const bg_style = {
     backgroundColor: "rgba(94, 50, 18, 0.3)",
-    top: "27%",
+    top: "35%",
     right: "3%",
     position: "absolute",
   };
   return (
     <div>
-      <div className="text-4xl text-[#5E3212] font-poppins my-[90px] text-center">
-        Achievements
+      <div className="text-4xl text-[#5E3212] font-poppins mt-[90px] mb-[40px] text-center">
+        Cirtifications
       </div>
       <div className="flex flex-wrap justify-center">
         {earned.map((item) => (
@@ -48,13 +48,10 @@ const Achievements = () => {
                   <li className="m-[10px] cursor-pointer">
                     <AiOutlineChrome />
                   </li>
-                  <li className="m-[10px] cursor-pointer">
-                    <FaLinkedinIn />
-                  </li>
                 </ul>
               </div>
             </div>
-            <div className="w-[250px] text-justify text-[#5E3212] font-poppins mx-[17px] font-bold">
+            <div className="w-[250px] text-justify text-[#5E3212] font-poppins mx-[20px] text-[15px]">
               {item.description}
             </div>
           </div>
