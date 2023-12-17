@@ -15,8 +15,8 @@ import "./styles/skills.css"
 const Skills = () => {
 	return (
 		<div className="">
-			<div className="text-4xl text-[#5E3212] font-poppins mt-[50px] mb-[20px] text-center">
-				Skills
+			<div className="text-4xl text-[#5E3212] font-poppins my-[50px] text-center">
+				skills
 			</div>
 			<div className="skills">
 				<div className="all_skills">

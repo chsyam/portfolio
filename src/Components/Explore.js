@@ -1,6 +1,6 @@
 import { FaHackerrank } from "react-icons/fa";
 import { SiLeetcode, SiCodechef } from "react-icons/si";
-import gfg from "../images/gfg.svg";
+import gfg from "./../images/gfg.svg";
 import { Link } from "react-router-dom";
 
 const Explore = () => {
@@ -29,7 +29,7 @@ const Explore = () => {
                   <FaHackerrank />
                 </Link>
               </li>
-              <li className="my-[10px]  text-white font-poppins">HackerRank</li>
+              <li className="my-[10px]  text-white font-poppins">Hacker Rank</li>
             </ul>
           </div>
           <div className="mx-[20px]">
@@ -39,7 +39,7 @@ const Explore = () => {
                   <SiLeetcode />
                 </Link>
               </li>
-              <li className="my-[10px] text-white font-poppins">LeetCode</li>
+              <li className="my-[10px] text-white font-poppins">Leet Code</li>
             </ul>
           </div>
           <div className="mx-[20px]">
@@ -53,7 +53,7 @@ const Explore = () => {
                 </Link>
               </li>
 
-              <li className="my-[10px] text-white font-poppins">CodeChef</li>
+              <li className="my-[10px] text-white font-poppins">Code Chef</li>
             </ul>
           </div>
           <div className="mx-[20px]">

@@ -33,7 +33,7 @@ function App() {
 
 	const scrollHandler = (elemRef) => {
 		window.scrollTo({
-			top: elemRef.current.offsetTop,
+			top: elemRef.current.offsetTop - 80,
 			behavior: "smooth",
 		});
 	};
@@ -57,7 +57,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<HomeLogo />
 					</span>
-					<span>Home</span>
+					<span>home</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -66,7 +66,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<ExperienceLogo />
 					</span>
-					<span>Experience</span>
+					<span>experience</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -75,7 +75,7 @@ function App() {
 					<span className="pt-[7px] pr-[1px]">
 						<SkillsLogo />
 					</span>
-					<span>Skills</span>
+					<span>skills</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -84,7 +84,7 @@ function App() {
 					<span className="pt-[7px] pr-[1px]">
 						<ProjectsLogo />
 					</span>
-					<span>Projects</span>
+					<span>projects</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -93,7 +93,7 @@ function App() {
 					<span className="pt-[7px] pr-[1px]">
 						<CirtificationsLogo />
 					</span>
-					<span>Cirtifications</span>
+					<span>cirtifications</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -102,7 +102,7 @@ function App() {
 					<span className="pt-[7px] pr-[1px]">
 						<AboutLogo />
 					</span>
-					<span>About</span>
+					<span>about</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -111,7 +111,7 @@ function App() {
 					<span className="pt-[7px] pr-[1px]">
 						<ContactLogo />
 					</span>
-					<span>Contact</span>
+					<span>contact</span>
 				</div>
 			</div>
 			<div>

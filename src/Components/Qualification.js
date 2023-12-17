@@ -26,7 +26,7 @@ const Qualification = () => {
 	];
 
 	return (
-		<div className="shadow-xl my-[100px] w-max m-auto rounded-md border-2 border-white">
+		<div className="shadow-xl my-[100px] w-max m-auto rounded-[5px] border-[3px] border-white">
 			<div className="text-4xl text-[#5E3212] font-poppins my-[10px] text-center">
 				Education
 			</div>
