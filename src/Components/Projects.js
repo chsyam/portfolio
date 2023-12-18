@@ -15,7 +15,7 @@ const Card = () => {
         My Recent works
       </div>
 
-      <div className="card my-[80px] flex justify-center">
+      <div className="my-[80px] flex justify-center">
         <div className="description mr-[10px] text-[#5E3212] font-poppins w-[35%] p-[20px] text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -48,7 +48,7 @@ const Card = () => {
           <div className="text-[#5E3212] text-3xl font-bold">Dairy Bike</div>
         </div>
       </div>
-      <div className="card my-[80px] flex justify-center">
+      <div className="my-[80px] flex justify-center">
         <div
           className="card_item mr-[10px] relative grid place-content-center p-[20px] w-[35%] h-[300px] rounded-xl"
           style={{ backgroundColor: "rgba(94, 50, 18, 0.5)" }}
@@ -81,7 +81,7 @@ const Card = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
-      <div className="card my-[80px] flex justify-center">
+      <div className="my-[80px] flex justify-center">
         <div className="description mr-[10px] text-[#5E3212] font-poppins w-[35%] p-[20px] text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
