@@ -49,7 +49,7 @@ function App() {
 	};
 	return (
 		<div className="bg-[#f3e8df] h-full">
-			<div className="header h-[65px] bg-[red] flex justify-center flex-nowrap">
+			<div className="header h-[65px] flex justify-center flex-nowrap">
 				<div
 					className="cursor-pointer mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={HomeClickHandler}
