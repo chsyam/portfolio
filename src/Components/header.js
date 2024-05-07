@@ -9,7 +9,7 @@ function Header() {
 	return (
 		<div>
 			<div className="flex justify-center">
-				<div className="w-[80%] my-[20px] bg-[red] flex justify-center flex-nowrap">
+				<div className="w-[80%] my-[20px] flex justify-center flex-nowrap">
 					<button
 						onClick={clickHandler}
 						className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]"
