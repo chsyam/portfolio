@@ -1,4 +1,4 @@
-import Selfie from "../images/self.jpg";
+import Selfie from "../images/my_selfie.jpg";
 
 const AboutMe = () => {
 	return (
@@ -9,12 +9,13 @@ const AboutMe = () => {
 			<div className="flex justify-center">
 				<div className="p-[20px]">
 					<img
-						className="mx-auto rounded-full"
+						style={{ borderRadius: "50%" }} width="400px" height="600px"
+						className="mx-auto"
 						src={Selfie}
 						alt="myphoto"
 					></img>
 				</div>
-				<div className="font-poppins text-sm w-[40%] text-justify p-[20px] m-[20px]">
+				<div className="font-poppins text-[20px] w-[40%] text-justify p-[20px] m-[20px]">
 					Im a final year student at Gayatri Vidya Parishad College Of
 					Engineering, Visakhapatnam, pursuing Bachelor of Technology in
 					Computer Science and Engineering. I am working in web development,
@@ -31,7 +32,7 @@ const AboutMe = () => {
 					like to connect.
 				</div>
 			</div>
-		</div >
+		</div>
 	);
 };
 export default AboutMe;

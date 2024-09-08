@@ -1,6 +1,6 @@
 import { BsGithub, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
-import Selfie from "../images/self.jpg";
+import Selfie from "../images/my_selfie.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
 		},
 	];
 
-	
+
 	return (
 		<div className="mt-[50px] mb-[4%] h-[600px] flex justify-center font-poppins">
 			<div className="details my-auto mr-[3%]">
@@ -35,8 +35,8 @@ const Home = () => {
 				</div>
 				<div className="icons my-[30px] text-[#5E3212]">
 					<ul className="flex">
-						{social_medial_links.map((website) => (
-							<li className="mr-[25px] text-3xl cursor-pointer">
+						{social_medial_links.map((website, index) => (
+							<li key={index} className="mr-[25px] text-3xl cursor-pointer">
 								<Link target="_blank" to={website.link}>
 									{website.logo}
 								</Link>
@@ -57,7 +57,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="my-auto">
-				<img width="400px" height="600px" src={Selfie} alt="myphoto"></img>
+				<img style={{borderRadius:"50%"}} width="400px" height="600px" src={Selfie} alt="myphoto"></img>
 			</div>
 		</div>
 	);

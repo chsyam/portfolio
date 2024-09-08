@@ -5,3 +5,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (max-width: 1200px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    zoom: 0.7;
+  }
+}
+
+@media (max-width: 810px) {
+  body {
+    zoom: 0.5;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    zoom: 0.4;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    zoom: 0.3;
+  }
+}

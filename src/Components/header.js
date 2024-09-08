@@ -15,7 +15,7 @@ function Header() {
 						className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]"
 					>
 						<Home />
-						Homee
+						Home
 					</button>
 					<div className="cursor-pointer underline underline-offset-2 mx-[25px] text-[#5E3212] font-poppins text-[25px]">
 						Services

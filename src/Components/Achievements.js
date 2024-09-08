@@ -56,8 +56,8 @@ const Achievements = () => {
 				Cirtifications
 			</div>
 			<div className="flex flex-wrap justify-center">
-				{earned.map((item) => (
-					<div className="cirtifications_card">
+				{earned.map((item, index) => (
+					<div key={index} className="cirtifications_card">
 						<div>
 							<img
 								src={item.image}

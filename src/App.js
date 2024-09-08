@@ -47,6 +47,7 @@ function App() {
 			});
 		}
 	};
+
 	return (
 		<div className="bg-[#f3e8df] h-full">
 			<div className="header h-[65px] flex justify-center flex-nowrap">
@@ -57,7 +58,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<HomeLogo />
 					</span>
-					<span>home</span>
+					<span className="font-bold">home</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -66,52 +67,52 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<ExperienceLogo />
 					</span>
-					<span>experience</span>
+					<span className="font-bold">experience</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={() => scrollHandler(skills_ref)}
 				>
-					<span className="pt-[7px] pr-[1px]">
+					<span className="pt-[7px] pr-[4px]">
 						<SkillsLogo />
 					</span>
-					<span>skills</span>
+					<span className="font-bold">skills</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={() => scrollHandler(projects_ref)}
 				>
-					<span className="pt-[7px] pr-[1px]">
+					<span className="pt-[7px] pr-[4px]">
 						<ProjectsLogo />
 					</span>
-					<span>projects</span>
+					<span className="font-bold">projects</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={() => scrollHandler(achievements_ref)}
 				>
-					<span className="pt-[7px] pr-[1px]">
+					<span className="pt-[7px] pr-[4px]">
 						<CirtificationsLogo />
 					</span>
-					<span>cirtifications</span>
+					<span className="font-bold">cirtifications</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={() => scrollHandler(about_ref)}
 				>
-					<span className="pt-[7px] pr-[1px]">
+					<span className="pt-[7px] pr-[4px]">
 						<AboutLogo />
 					</span>
-					<span>about</span>
+					<span className="font-bold">about</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
 					onClick={() => scrollHandler(contact_ref)}
 				>
-					<span className="pt-[7px] pr-[1px]">
+					<span className="pt-[7px] pr-[4px]">
 						<ContactLogo />
 					</span>
-					<span>contact</span>
+					<span className="font-bold">contact</span>
 				</div>
 			</div>
 			<div>

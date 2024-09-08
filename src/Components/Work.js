@@ -38,18 +38,18 @@ const Work = () => {
 				],
 			skills: ["Python", "Java", "C/C++", "Teaching", "Web Developement"]
 		},
-		{
-			title: "Cognizant",
-			image: "cognizant.svg",
-			time: "Nov 2022 - Feb 2023",
-			role: "Full Stack Developer - Intern",
-			description:
-				[
-					"Using the platform Fiverr, I'm providing the best services with a proven track record of successful projects & I bring adaptability and creativity to every assignment.",
-					"My freelance journey showcases a diverse skill set, from teaching to web development, ensuring a holistic approach to client projects."
-				],
-			skills: ["React JS", "Spring Boot", "Java", "JUnit", "Tailwind CSS", "MySQL"]
-		},
+		// {
+		// 	title: "Cognizant",
+		// 	image: "cognizant.svg",
+		// 	time: "Nov 2022 - Feb 2023",
+		// 	role: "Full Stack Developer - Intern",
+		// 	description:
+		// 		[
+		// 			"Using the platform Fiverr, I'm providing the best services with a proven track record of successful projects & I bring adaptability and creativity to every assignment.",
+		// 			"My freelance journey showcases a diverse skill set, from teaching to web development, ensuring a holistic approach to client projects."
+		// 		],
+		// 	skills: ["React JS", "Spring Boot", "Java", "JUnit", "Tailwind CSS", "MySQL"]
+		// },
 	];
 	return (
 		<div>
@@ -57,18 +57,18 @@ const Work = () => {
 				Work Experience
 			</div>
 			<div className="m-auto">
-				<ul className="flex justify-center">
+				<ul className="flex justify-center gap-[50px]">
 					{
-						Experience.map((exp) => (
-							<li className="p-[20px]">
+						Experience.map((exp, index) => (
+							<li key={index} className="p-[20px] font-poppins">
 								<div className="bg-[#fff] rounded-[5px] w-fit">
 									<img
 										className="rounded-[5px] w-[140px] p-[10px] h-[100px]"
 										src={require(`../images/${exp.image}`)}
 										alt="company"
-									></img>
+									/>
 								</div>
-								<div className="description mt-[25px] w-[250px] text-[16px] text-justify">
+								<div className="description mt-[25px] w-[300px] text-[16px] text-justify">
 									<table className="mx-auto">
 										<tbody>
 											<tr>
@@ -97,8 +97,8 @@ const Work = () => {
 												<td className="border-none text-justify">
 													<div className="text_scroll">
 														<ul>
-															{exp.description.map((desc) => (
-																<span>
+															{exp.description.map((desc, index) => (
+																<span key={index}>
 																	{desc}
 																	<br />
 																</span >
