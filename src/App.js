@@ -58,7 +58,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<HomeLogo />
 					</span>
-					<span className="font-bold">home</span>
+					<span>home</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -67,7 +67,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<ExperienceLogo />
 					</span>
-					<span className="font-bold">experience</span>
+					<span>experience</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -76,7 +76,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<SkillsLogo />
 					</span>
-					<span className="font-bold">skills</span>
+					<span>skills</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -85,7 +85,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<ProjectsLogo />
 					</span>
-					<span className="font-bold">projects</span>
+					<span>projects</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -94,7 +94,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<CirtificationsLogo />
 					</span>
-					<span className="font-bold">cirtifications</span>
+					<span>cirtifications</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -103,7 +103,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<AboutLogo />
 					</span>
-					<span className="font-bold">about</span>
+					<span>about</span>
 				</div>
 				<div
 					className="cursor-pointer  mx-[25px] text-[#5E3212] font-poppins text-[25px] flex flex-nowrap"
@@ -112,7 +112,7 @@ function App() {
 					<span className="pt-[7px] pr-[4px]">
 						<ContactLogo />
 					</span>
-					<span className="font-bold">contact</span>
+					<span>contact</span>
 				</div>
 			</div>
 			<div>
