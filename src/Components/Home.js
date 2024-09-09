@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 import Selfie from "../images/my_selfie.jpg";
 import { Link } from "react-router-dom";
@@ -45,7 +45,9 @@ const Home = () => {
 					</ul>
 				</div>
 
-				<div className="rounded-md my-[40px] p-[10px] contact bg-[#A96628] justify-start w-fit">
+				<div onClick={() => {
+					window.open("mailto:syamkumar6845@gmail.com", "_blank")
+				}} className="rounded-md my-[40px] p-[10px] contact bg-[#A96628] justify-start w-fit">
 					<div className="flex cursor-pointer">
 						<span className="font-bold text-white text-xl inline-block align-middle">
 							Contact
