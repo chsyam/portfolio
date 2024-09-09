@@ -17,10 +17,10 @@ const Home = () => {
 			link: "https://twitter.com/Syam_KumarCH",
 			logo: <BsTwitter />,
 		},
-		{
-			link: "https://www.youtube.com/channel/UCsnGsqVWEl_37bGwA_MmAng",
-			logo: <BsYoutube />,
-		},
+		// {
+		// 	link: "https://www.youtube.com/channel/UCsnGsqVWEl_37bGwA_MmAng",
+		// 	logo: <BsYoutube />,
+		// },
 	];
 
 
@@ -57,7 +57,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="my-auto">
-				<img style={{borderRadius:"50%"}} width="400px" height="600px" src={Selfie} alt="myphoto"></img>
+				<img style={{ borderRadius: "50%" }} width="400px" height="600px" src={Selfie} alt="myphoto"></img>
 			</div>
 		</div>
 	);
